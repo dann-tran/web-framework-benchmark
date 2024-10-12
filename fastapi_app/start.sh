@@ -1,0 +1,1 @@
+uvicorn main:app --workers 4 --log-level critical --port 8000
