@@ -1,0 +1,1 @@
+gunicorn -w 4 'main:app' -p 8000 --log-level critical
