@@ -1,12 +1,18 @@
-import express, { Express, Request, Response } from "express";
+import express from 'express'
+import { SERVER_CONFIG } from './app-config';
+import { errorLoggerMiddleware, logger, loggerMiddleware } from './logging';
+import router from './router';
 
-const app: Express = express();
-const port = process.env.PORT || 3000;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, World!");
-});
+const app = express()
 
-app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
-});
+app.use(loggerMiddleware)
+app.use(router)
+app.use(errorLoggerMiddleware)
+
+app.listen(SERVER_CONFIG.port, () => {
+  logger.log({
+    level: 'info',
+    message: `Server is running at http://localhost:${SERVER_CONFIG.port}`
+  });
+})
