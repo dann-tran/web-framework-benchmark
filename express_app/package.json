@@ -14,7 +14,6 @@
     "@sequelize/postgres": "^7.0.0-alpha.43",
     "config": "^3.3.12",
     "express": "^5.0.1",
-    "express-winston": "^4.2.0",
     "js-yaml": "^4.1.0",
     "postgres": "^3.4.5",
     "uuid": "^11.0.2",
