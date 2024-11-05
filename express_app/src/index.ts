@@ -20,18 +20,15 @@ app.use((req, _, next) => {
   req.id = id
   next()
 })
-app.use((req, _, next) => {
-  logger.info(`${req.id} HTTP ${req.method} ${req.path}`)
-  next()
-})
 app.use((req, res, next) => {
+  logger.info(`${req.id} HTTP ${req.method} ${req.path}`)
   res.on('finish', () => {
     logger.info(`${req.id} HTTP ${res.statusCode} ${res.statusMessage}`)
   })
   next()
 })
 app.use(router)
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, req: Request, _: Response, next: NextFunction) => {
   const baseMsg = `${req.id} ${err.name} ${err.message}`
   const msg = err.stack ? `${baseMsg}\nStack trace: ${err.stack}` : baseMsg
   logger.error(msg)
