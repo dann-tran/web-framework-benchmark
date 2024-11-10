@@ -1,15 +1,18 @@
 import Fastify from 'fastify'
+import FastifyPg from '@fastify/postgres'
 import routes from './routes'
+import { DB_CONFIG, LOGGING_CONFIG, SERVER_CONFIG } from './app-config'
 
 
-async function start() {
-  const fastify = Fastify()
-  await fastify.register(routes)
-  const address = await fastify.listen({ port: 3000 })
-  console.log(`Server listening at ${address}`)
-}
-
-start().catch(err => {
-  console.error(err)
-  process.exit(1)
+const fastify = Fastify({
+  logger: {
+    level: LOGGING_CONFIG.level
+  }
 })
+
+fastify.log.info("Connecting to DB with config: ", DB_CONFIG)
+fastify.register(FastifyPg, DB_CONFIG)
+
+fastify.register(routes)
+
+fastify.listen({...SERVER_CONFIG}) // .listen will mutate the arg passed in, but node-config object must be immutable, so a copy is made

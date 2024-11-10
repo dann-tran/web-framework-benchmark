@@ -1,13 +1,11 @@
-import { FastifyPluginCallback, FastifyReply, FastifyRequest } from 'fastify'
+import { FastifyPluginCallback } from 'fastify'
 import fp from 'fastify-plugin'
+import { getItemById } from './controller'
 
 
 const routes: FastifyPluginCallback<{}> = (fastify, _opts, done) => {
-  fastify.get("/", helloWorld)
-
-  function helloWorld(_req: FastifyRequest, _reply: FastifyReply) {
-    return "Hello, World!"
-  }
+  fastify.get("/", (_req, _reply) => "Hello, World!")
+  fastify.get("/items/:id", getItemById(fastify))
   
   done()
 }
