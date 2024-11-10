@@ -5,7 +5,9 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "NODE_ENV=production node dist/index.js",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "start-cluster": "npx pm2 start pm2.config.yaml",
+    "stop-cluster": "npx pm2 stop pm2.config.yaml"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +19,9 @@
     "fastify-plugin": "^5.0.1",
     "js-yaml": "^4.1.0",
     "pg": "^8.13.1",
-    "postgres": "^3.4.5"
+    "pm2": "^5.4.2",
+    "postgres": "^3.4.5",
+    "uuid": "^11.0.2"
   },
   "devDependencies": {
     "@types/config": "^3.3.5",

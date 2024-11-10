@@ -1,10 +1,12 @@
 import Fastify from 'fastify'
 import FastifyPg from '@fastify/postgres'
+import { v4 as uuidv4 } from 'uuid'
 import routes from './routes'
 import { DB_CONFIG, LOGGING_CONFIG, SERVER_CONFIG } from './app-config'
 
 
 const fastify = Fastify({
+  genReqId: _ => uuidv4(),
   logger: {
     level: LOGGING_CONFIG.level
   }
