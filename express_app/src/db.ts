@@ -1,6 +1,6 @@
 import postgres from 'postgres'
 import { DB_CONFIG } from './app-config'
-import logger from './logging'
+import { logger } from './logging'
 
 logger.info(`DB config: ${JSON.stringify(DB_CONFIG)}`)
 
