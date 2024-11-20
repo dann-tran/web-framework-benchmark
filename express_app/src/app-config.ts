@@ -6,6 +6,7 @@ interface ServerConfig {
 
 interface LoggingConfig {
   level: string
+  filename: string
 }
 
 interface DbConfig {

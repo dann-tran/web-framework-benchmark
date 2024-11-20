@@ -8,7 +8,8 @@ import { DB_CONFIG, LOGGING_CONFIG, SERVER_CONFIG } from './app-config'
 const fastify = Fastify({
   genReqId: _ => uuidv4(),
   logger: {
-    level: LOGGING_CONFIG.level
+    level: LOGGING_CONFIG.level,
+    file: LOGGING_CONFIG.filename
   }
 })
 
