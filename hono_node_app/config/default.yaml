@@ -1,0 +1,11 @@
+server:
+  port: 3000
+logging:
+  level: info
+  filename: logs/application.log
+db:
+  host: localhost
+  port: 5432
+  database: postgres
+  username: readonly_user
+  password: readonly_user
