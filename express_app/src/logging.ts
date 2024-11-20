@@ -19,7 +19,7 @@ export function logRequest(req: Request, _res: Response, next: NextFunction) {
 
 export function logResponseStatus(req: Request, res: Response, next: NextFunction) {
   res.on('finish', () => {
-    logger.info(`${req.id} HTTP ${res.statusCode} ${res.statusMessage}`)
+    logger.info(`${req.id} HTTP ${res.statusCode}`)
   })
   next()
 }

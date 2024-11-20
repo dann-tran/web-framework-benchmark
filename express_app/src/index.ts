@@ -1,8 +1,8 @@
 import express, { NextFunction, Request, Response } from 'express'
 import * as uuid from 'uuid'
-import { SERVER_CONFIG } from './app-config';
-import { logErrors, logger, logRequest, logResponseStatus } from './logging';
-import router from './router';
+import { SERVER_CONFIG } from './app-config'
+import { logErrors, logger, logRequest, logResponseStatus } from './logging'
+import router from './router'
 
 
 declare global {

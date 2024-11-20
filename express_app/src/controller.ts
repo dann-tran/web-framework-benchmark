@@ -1,6 +1,6 @@
-import sql from './db';
-import { NotFoundError } from './errors';
-import { Item, ItemWithCharFreq } from './model';
+import sql from './db'
+import { NotFoundError } from './errors'
+import { Item, ItemWithCharFreq } from './model'
 
 export async function getItemById(id: string): Promise<ItemWithCharFreq> {
   const items = await sql<Item[]>`SELECT * FROM items WHERE id = ${id}`
