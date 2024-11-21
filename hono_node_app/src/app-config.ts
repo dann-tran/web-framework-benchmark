@@ -1,22 +1,31 @@
+import { z } from 'zod'
 import config from 'config'
 
-interface ServerConfig {
-  port: number
-}
+const ServerConfigSchema = z.object({
+  port: z.number()
+})
 
-interface LoggingConfig {
-  level: string
-  filename: string
-}
+const LoggingConfigSchema = z.object({
+  level: z.enum(['info', 'debug', 'error']),
+  filename: z.string()
+})
 
-interface DbConfig {
-  host: string
-  port: number
-  database: string
-  username: string
-  password: string
-}
+const DbConfigSchema = z.object({
+  host: z.string(),
+  port: z.number(),
+  database: z.string(),
+  username: z.string(),
+  password: z.string()
+})
 
-export const SERVER_CONFIG = config.get<ServerConfig>('server')
-export const LOGGING_CONFIG = config.get<LoggingConfig>('logging')
-export const DB_CONFIG = config.get<DbConfig>('db')
+const ConfigSchema = z.object({
+  server: ServerConfigSchema,
+  logging: LoggingConfigSchema,
+  db: DbConfigSchema
+})
+
+export const {
+  server: SERVER_CONFIG,
+  logging: LOGGING_CONFIG,
+  db: DB_CONFIG
+} = ConfigSchema.parse(config)
