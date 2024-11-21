@@ -1,0 +1,36 @@
+{"level":"INFO","datetime":1732204440891,"message":"e6f87620-6839-4653-8c4b-5d1e9fbcca0f HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732204440892,"message":"e6f87620-6839-4653-8c4b-5d1e9fbcca0f HTTP 200"}
+{"level":"INFO","datetime":1732204442121,"message":"f57277bb-dcdf-4774-bd0f-d6754a8d43b2 HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732204442121,"message":"f57277bb-dcdf-4774-bd0f-d6754a8d43b2 HTTP 200"}
+{"level":"INFO","datetime":1732204442977,"message":"e7ee58b0-a33c-4b5d-b2d0-6057b1f1e02e HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732204442977,"message":"e7ee58b0-a33c-4b5d-b2d0-6057b1f1e02e HTTP 200"}
+{"level":"INFO","datetime":1732204541088,"message":"03994771-c4c4-4405-8d45-16956600ba86 HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204541090,"message":"03994771-c4c4-4405-8d45-16956600ba86 HTTP 404"}
+{"level":"INFO","datetime":1732204541700,"message":"3255cbfb-f983-40a5-93d8-067976ada4c8 HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204541700,"message":"3255cbfb-f983-40a5-93d8-067976ada4c8 HTTP 404"}
+{"level":"INFO","datetime":1732204543594,"message":"6517f34e-07cd-4c5e-a1c8-e9fb6e2975d3 HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204543594,"message":"6517f34e-07cd-4c5e-a1c8-e9fb6e2975d3 HTTP 404"}
+{"level":"INFO","datetime":1732204544348,"message":"573324e4-2cf3-4462-abc8-51b3160370b8 HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204544348,"message":"573324e4-2cf3-4462-abc8-51b3160370b8 HTTP 404"}
+{"level":"INFO","datetime":1732204544559,"message":"d22b109b-0e4c-4ca6-bdab-f14a7069d55c HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204544559,"message":"d22b109b-0e4c-4ca6-bdab-f14a7069d55c HTTP 404"}
+{"level":"INFO","datetime":1732204544741,"message":"073019b7-5e2b-4c48-81d5-52131aecf116 HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204544741,"message":"073019b7-5e2b-4c48-81d5-52131aecf116 HTTP 404"}
+{"level":"INFO","datetime":1732204544983,"message":"78746c8b-88f7-40de-80a4-946e7b433eaa HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204544984,"message":"78746c8b-88f7-40de-80a4-946e7b433eaa HTTP 404"}
+{"level":"INFO","datetime":1732204949647,"message":"81f684fd-524a-4629-a1a0-0ed5436982cb HTTP GET http://localhost:3000/items"}
+{"level":"INFO","datetime":1732204949648,"message":"81f684fd-524a-4629-a1a0-0ed5436982cb HTTP 404"}
+{"level":"INFO","datetime":1732204955818,"message":"718042d1-4b21-4503-a96d-466932146967 HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732204955819,"message":"718042d1-4b21-4503-a96d-466932146967 HTTP 200"}
+{"level":"INFO","datetime":1732205000568,"message":"c85a7863-bca7-4348-90c7-a8f53ddea9d0 HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732205000569,"message":"c85a7863-bca7-4348-90c7-a8f53ddea9d0 HTTP 200"}
+{"level":"INFO","datetime":1732205009250,"message":"440bc623-fc5f-4084-97b0-31d2d0ac3598 HTTP GET http://localhost:3000/iten"}
+{"level":"INFO","datetime":1732205009261,"message":"440bc623-fc5f-4084-97b0-31d2d0ac3598 HTTP 404"}
+{"level":"INFO","datetime":1732205662892,"message":"807c942d-ba46-425e-b11f-1ed8592eab2c HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732205662893,"message":"807c942d-ba46-425e-b11f-1ed8592eab2c HTTP 200"}
+{"level":"INFO","datetime":1732231791495,"message":"d6c34cbb-74c3-4e53-8762-91c5490e3ea3 HTTP GET http://localhost:3000/"}
+{"level":"INFO","datetime":1732231791496,"message":"d6c34cbb-74c3-4e53-8762-91c5490e3ea3 HTTP 200"}
+{"level":"INFO","datetime":1732231792143,"message":"acd5241b-795d-48eb-a337-b9e304f2013a HTTP GET http://localhost:3000/favicon.ico"}
+{"level":"INFO","datetime":1732231792143,"message":"acd5241b-795d-48eb-a337-b9e304f2013a HTTP 404"}
+{"level":"INFO","datetime":1732231802917,"message":"6d71ce2b-1f06-431e-b666-2c8a70882482 HTTP GET http://localhost:3000/itmsss"}
+{"level":"INFO","datetime":1732231802927,"message":"6d71ce2b-1f06-431e-b666-2c8a70882482 HTTP 404"}
