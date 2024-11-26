@@ -1,12 +1,20 @@
 {
   "name": "hono_bun_app",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build --target=bun ./src/index.ts --outdir ./dist --sourcemap=linked",
+    "start": "bun run ./dist/index.js"
   },
   "dependencies": {
-    "hono": "^4.6.11"
+    "config": "^3.3.12",
+    "hono": "^4.6.11",
+    "js-yaml": "^4.1.0",
+    "postgres": "^3.4.5",
+    "winston": "^3.17.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/config": "^3.3.5"
   }
 }
