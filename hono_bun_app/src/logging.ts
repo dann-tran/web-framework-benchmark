@@ -1,4 +1,4 @@
-import * as winston from 'winston'
+import winston from 'winston'
 import { LOGGING_CONFIG } from './app-config'
 
 const { combine, timestamp, json } = winston.format

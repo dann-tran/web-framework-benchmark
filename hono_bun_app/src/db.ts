@@ -1,4 +1,4 @@
-import { default as postgres } from 'postgres'
+import postgres from 'postgres'
 import { DB_CONFIG } from './app-config'
 import { winstonLogger } from './logging'
 

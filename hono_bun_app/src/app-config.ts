@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import * as config from 'config'
+import config from 'config'
 
 const ServerConfigSchema = z.object({
   port: z.number()
